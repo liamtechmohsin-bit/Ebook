@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
 html,
-body {
+* {
+    box-sizing: border-box;
+}
+
+html,body,#root {
     overflow-x: hidden;
     max-width: 100%;
     position: relative;
@@ -11,7 +15,7 @@ body {
 
     /* Main Container */
     .main-container {
-        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-12;
+        @apply max-w-full mx-auto px-4 sm:px-6 lg:px-12;
     }
 
     .section-main {

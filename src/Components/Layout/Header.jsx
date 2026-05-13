@@ -13,10 +13,9 @@ const Header = () => {
     ];
     return (
         <>
-            <div>
-                <Navbar />
-                <HeroBanner />
-            </div>
+            <Navbar />
+            <HeroBanner />
+
         </>
     )
 }
