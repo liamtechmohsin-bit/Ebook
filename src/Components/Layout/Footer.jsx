@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
           {/* Quick Links */}
           <div>
-            <h3 className="text-[#E4CC15] font-semibold mb-5 text-sm uppercase tracking-wide">
+            <h3 className="text-[#CDC72A] font-semibold mb-5 text-sm uppercase tracking-wide">
               Quick Links
             </h3>
             <ul className="space-y-3 text-sm text-gray-300">
@@ -30,7 +30,7 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       href="/"
-                      className="hover:text-yellow-400 transition duration-300"
+                      className="hover:text-[#CDC72A] transition duration-300"
                     >
                       {item}
                     </a>
@@ -40,7 +40,7 @@ const Footer = () => {
             </ul>
             {/* Social */}
             <div className="mt-8">
-              <h4 className="text-[#E4CC15] font-semibold mb-4 text-sm uppercase tracking-wide">
+              <h4 className="text-[#CDC72A] font-semibold mb-4 text-sm uppercase tracking-wide">
                 Follow Us
               </h4>
 
@@ -62,7 +62,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-[#E4CC15] font-semibold mb-5 text-sm uppercase tracking-wide">
+            <h3 className="text-[#CDC72A] font-semibold mb-5 text-sm uppercase tracking-wide">
               Services
             </h3>
 
@@ -80,7 +80,7 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href="/"
-                    className="hover:text-[#E4CC15] transition duration-300"
+                    className="hover:text-[#CDC72A] transition duration-300"
                   >
                     {service}
                   </a>
@@ -91,25 +91,25 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-[#E4CC15] font-semibold mb-5 text-sm uppercase tracking-wide">
+            <h3 className="text-[#CDC72A] font-semibold mb-5 text-sm uppercase tracking-wide">
               Contact
             </h3>
 
             <div className="space-y-5 text-sm text-gray-300">
               
               <div className="flex items-start gap-3">
-                <IoCall className="text-[#E4CC15] mt-1" size={16} />
+                <IoCall className="text-[#CDC72A] mt-1" size={16} />
                 <p>(855) 720-6237</p>
               </div>
 
               <div className="flex items-start gap-3">
-                <IoMail className="text-[#E4CC15] mt-1" size={16} />
+                <IoMail className="text-[#CDC72A] mt-1" size={16} />
                 <p>sales@pbwdesigns.com</p>
               </div>
 
               <div className="flex items-start gap-3">
                 <HiLocationMarker
-                  className="text-[#E4CC15] mt-1"
+                  className="text-[#CDC72A] mt-1"
                   size={18}
                 />
                 <p>
@@ -132,21 +132,21 @@ const Footer = () => {
           <div className="flex items-center gap-5">
             <a
               href="/"
-              className="hover:text-[#E4CC15] transition duration-300"
+              className="hover:text-[#CDC72A] transition duration-300"
             >
               Terms Conditions
             </a>
 
             <a
               href="/"
-              className="hover:text-[#E4CC15] transition duration-300"
+              className="hover:text-[#CDC72A] transition duration-300"
             >
               Privacy Policy
             </a>
 
             <a
               href="/"
-              className="hover:text-[#E4CC15] transition duration-300"
+              className="hover:text-[#CDC72A] transition duration-300"
             >
               Refund Policy
             </a>

@@ -32,7 +32,7 @@ const Ctasection = () => {
 
                     {/* Yellow Action Button */}
                     <div className="pt-4 flex justify-center">
-                        <Button />
+                        <Button text="Contact Us"/>
                     </div>
                 </div>
             </div>

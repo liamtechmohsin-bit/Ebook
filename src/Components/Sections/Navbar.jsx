@@ -40,7 +40,7 @@ const Navbar = () => {
                         )}
                     </nav>
                     {/* Desktop Button */}
-                    <Button />
+                    <Button text="Get in Touch"/>
                 </div>
                 {/* Mobile Menu Button */}
                 <button

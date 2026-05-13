@@ -7,7 +7,7 @@ const ContactSection = () => {
         <div className="relative z-10 px-3 py-6 md:px-10 md:py-12">
           {/* Heading */}
           <div className="text-center mb-10">
-            <h3 className="text-[#E4CC15] text-2xl sm:text-3xl font-bold leading-snug">
+            <h3 className="text-[#CDC72A] text-2xl sm:text-3xl font-bold leading-snug">
               Let's Get In Touch.
             </h3>
             <p className="text-gray-400 text-sm md:text-base mt-3 max-w-2xl mx-auto leading-relaxed">
@@ -22,12 +22,12 @@ const ContactSection = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full h-12 bg-[#f5f5f5] text-black rounded px-4 outline-none border border-transparent focus:border-yellow-400 transition duration-300"
+                className="w-full h-12 bg-[#f5f5f5] text-black rounded px-4 outline-none border border-transparent focus:border-[#CDC72A] transition duration-300"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full h-12 bg-[#f5f5f5] text-black rounded px-4 outline-none border border-transparent focus:border-yellow-400 transition duration-300"
+                className="w-full h-12 bg-[#f5f5f5] text-black rounded px-4 outline-none border border-transparent focus:border-[#CDC72A] transition duration-300"
               />
             </div>
 
@@ -35,7 +35,7 @@ const ContactSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
               <select
-                className="w-full h-12 bg-[#f5f5f5] text-gray-600 rounded px-4 outline-none border border-transparent focus:border-yellow-400 transition duration-300"
+                className="w-full h-12 bg-[#f5f5f5] text-gray-600 rounded px-4 outline-none border border-transparent focus:border-[#CDC72A] transition duration-300"
               >
                 <option>Select services</option>
                 <option>Web Development</option>
@@ -47,7 +47,7 @@ const ContactSection = () => {
               <input
                 type="text"
                 placeholder="Phone"
-                className="w-full h-12 bg-[#f5f5f5] text-black rounded px-4 outline-none border border-transparent focus:border-yellow-400 transition duration-300"
+                className="w-full h-12 bg-[#f5f5f5] text-black rounded px-4 outline-none border border-transparent focus:border-[#CDC72A] transition duration-300"
               />
             </div>
 
@@ -55,7 +55,7 @@ const ContactSection = () => {
             <textarea
               rows="5"
               placeholder="Your message"
-              className="w-full bg-[#f5f5f5] text-black rounded p-4 outline-none border border-transparent focus:border-yellow-400 transition duration-300 resize-none"
+              className="w-full bg-[#f5f5f5] text-black rounded p-4 outline-none border border-transparent focus:border-[#CDC72A] transition duration-300 resize-none"
             />
 
             {/* Bottom Text */}
@@ -68,12 +68,11 @@ const ContactSection = () => {
             <div className="flex justify-center pt-2">
               <button
                 type="submit"
-                className="w-full h-11 sm:h-12 text-white cursor-pointer bg-[#E4CC15] hover:bg-yellow-300 text-black font-semibold rounded-md transition duration-300"
+                className="w-full h-11 shadow-md sm:h-12 text-white cursor-pointer bg-[#CDC72A] hover:bg-transparent hover:text-[#CDC72A] hover:border-[1px] border-[#CDC72A] hover:shadow-[#CDC72A] font-semibold rounded-md transition duration-300"
               >
                 Submit
               </button>
             </div>
-
           </form>
         </div>
       </div>

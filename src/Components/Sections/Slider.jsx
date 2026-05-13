@@ -38,7 +38,7 @@ const Slider = () => {
         }
     ]
     return (
-        <div className='px-24 pb-5'>
+        <div className='px-4 md:px-24 pb-5'>
             <Swiper
                 modules={[Navigation, Autoplay]}
                 slidesPerView={3}
@@ -52,6 +52,20 @@ const Slider = () => {
                 navigation={{
                     nextEl: ".custom-next",
                     prevEl: ".custom-prev",
+                }}
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
                 }}
                 className="mySwiper"
             >

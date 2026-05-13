@@ -26,7 +26,7 @@ const Tabs = () => {
         <div className='flex flex-col gap-14 pt-10'>
             <div className='flex flex-col md:flex-row flex-wrap gap-10 px-10 w-full bg-linear-to-b from-[#1D2D2A] to-[#000000] text-white rounded-xl shadow-lg border border-neutral-800 overflow-hidden py-10 justify-center'>
                 {tabcontent.map(data => (
-                    <button className={`px-5 py-3 rounded-md text-base cursor-pointer shadow-md shadow-[#CDC72A] ${isActive === data.id ? "bg-[#CDC72A] text-white" : "text-[#CDC72A] bg-transparent border-[1px] border-[#CDC72A]"}`} onClick={() => checkActiveclass(data.id)}>{data.name}</button>
+                    <button className={`px-5 py-3 rounded-md text-base cursor-pointer shadow-md ${isActive === data.id ? "bg-[#CDC72A] text-white shadow-[#ffff]/40" : "text-[#CDC72A] bg-transparent border-[1px] border-[#CDC72A]"}`} onClick={() => checkActiveclass(data.id)}>{data.name}</button>
                 ))}
             </div>
             {activeService && (
@@ -52,7 +52,7 @@ const Tabs = () => {
                         </p>
 
                         <div className="pt-4 flex justify-center md:justify-start">
-                            <Button />
+                            <Button text="Learn more" onClick={() => navigate(`/services/${activeService.id}`)} />
                         </div>
                     </div>
 
