@@ -40,7 +40,7 @@ const Navbar = () => {
                         )}
                     </nav>
                     {/* Desktop Button */}
-                    <Button text="Get in Touch"/>
+                    <Button text="Get in Touch" mobile={true}/>
                 </div>
                 {/* Mobile Menu Button */}
                 <button
@@ -58,15 +58,15 @@ const Navbar = () => {
                     }`}
             >
                 <div className="px-6 py-6 flex flex-col gap-5">
-                    {["Home", "About", "Services", "Portfolio", "Contact"].map(
+                    {navlinks.map(
                         (item, index) => (
-                            <a
+                            <NavLink
                                 key={index}
-                                href="/"
+                                to={item.link}
                                 className="text-white hover:text-[CDC72A] transition duration-300"
                             >
-                                {item}
-                            </a>
+                                {item.name}
+                            </NavLink>
                         )
                     )}
                 </div>

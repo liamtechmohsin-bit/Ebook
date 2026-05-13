@@ -7,7 +7,60 @@ import {
 import { IoCall, IoMail } from "react-icons/io5";
 import { HiLocationMarker } from "react-icons/hi";
 import logo from '../../assets/logomark.png'
+import { NavLink } from "react-router";
 const Footer = () => {
+  const pages = [
+    {
+      name: "Home",
+      link: "/"
+    },
+    {
+      name: "About",
+      link: "/about"
+    },
+    {
+      name: "Portfolio",
+      link: "/portfolio"
+    },
+    {
+      name: "Contact",
+      link: "/contact"
+    }
+  ]
+  const services = [
+    {
+      id: "publishing-services",
+      name: "Publishing Services"
+    },
+    {
+      id: "ghostwriting",
+      name: "Ghostwriting"
+    },
+    {
+      id: "book-cover-design",
+      name: "Book Cover Design"
+    },
+    {
+      id: "formatting-&-proofreading",
+      name: "Formatting & Proofreading"
+    },
+    {
+      id: "author-website-design",
+      name: "Author Website Design"
+    },
+    {
+      id: "book-editing",
+      name: "Book Editing"
+    },
+    {
+      id: "book-publishing",
+      name: "Book Publishing"
+    },
+    {
+      id: "book-trailer",
+      name: "Book Trailer"
+    }
+  ]
   return (
     <footer className="bg-black pt-32 text-white rounded-t-2xl overflow-hidden">
       {/* Main Footer */}
@@ -25,15 +78,15 @@ const Footer = () => {
               Quick Links
             </h3>
             <ul className="space-y-3 text-sm text-gray-300">
-              {["Home", "About", "Services", "Portfolio", "Contact"].map(
+              {pages.map(
                 (item, index) => (
                   <li key={index}>
-                    <a
-                      href="/"
+                    <NavLink
+                      to={item.link}
                       className="hover:text-[#CDC72A] transition duration-300"
                     >
-                      {item}
-                    </a>
+                      {item.name}
+                    </NavLink>
                   </li>
                 )
               )}
@@ -67,23 +120,14 @@ const Footer = () => {
             </h3>
 
             <ul className="space-y-3 text-sm text-gray-300">
-              {[
-                "Publishing Services",
-                "Ghostwriting",
-                "Book Editing",
-                "Formatting & Proofreading",
-                "Book Cover Design",
-                "Book Publishing",
-                "Author Website Design",
-                "Book Trailer",
-              ].map((service, index) => (
+              {services.map((service, index) => (
                 <li key={index}>
-                  <a
-                    href="/"
+                  <NavLink
+                    to={`/services/${service.id}`}
                     className="hover:text-[#CDC72A] transition duration-300"
                   >
-                    {service}
-                  </a>
+                    {service.name}
+                  </NavLink>
                 </li>
               ))}
             </ul>
@@ -96,7 +140,7 @@ const Footer = () => {
             </h3>
 
             <div className="space-y-5 text-sm text-gray-300">
-              
+
               <div className="flex items-start gap-3">
                 <IoCall className="text-[#CDC72A] mt-1" size={16} />
                 <p>(855) 720-6237</p>
@@ -126,7 +170,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-          
+
           <p>© All Rights Reserved 2026 - ProWebDesignUSA</p>
 
           <div className="flex items-center gap-5">
